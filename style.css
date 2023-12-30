@@ -1,0 +1,39 @@
+a[href*="google"] {
+    color: green;
+}
+
+a[href*="link-group"] {
+    color: red;
+}
+
+#second-div p:nth-child(odd) {
+    color: red;
+}
+#second-div p:nth-child(even) {
+    color: blue;
+}
+
+#first-div > p:nth-child(2)::after,
+#first-div > p:nth-child(3)::after {
+    content: " - NEW";
+    color: yellow;
+}
+
+body > p:last-of-type:hover {
+    font-style: italic;
+}
+/* 
+raspao sam se ovde sa nekoliko opcija i jedva sam pronasao kako hahah
+cak sam prvo odradio samo html i mouse hover mi nije reagovao na paragraf 10 i mislio sam da je
+neophodno napraviti odvojeno html i css pa sam i to uradio
+ovo su neke opcije koje sam pokusao bilo ih jos, ali me sramota da ostavim haha
+
+body p:last-child:hover {
+    font-style: italic;
+}
+
+body p:last-of-type:hover {
+    font-style: italic;
+}
+
+*/
